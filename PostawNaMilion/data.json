@@ -1,0 +1,92 @@
+[
+  {
+    "Name": "Kategoria 1",
+    "AlreadyUsed": true,
+    "Questions": [
+      {
+        "Content": "tresc pytania",
+        "Answers": [
+          {
+            "Content": "odpowiedz 1",
+            "IsCorrect": true
+          },
+          {
+            "Content": "odpowiedz 2",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "tresc pytania",
+        "Answers": [
+          {
+            "Content": "odpowiedz 1",
+            "IsCorrect": true
+          },
+          {
+            "Content": "odpowiedz 2",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "tresc pytania",
+        "Answers": [
+          {
+            "Content": "odpowiedz 1",
+            "IsCorrect": true
+          },
+          {
+            "Content": "odpowiedz 2",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Kategoria 1",
+    "AlreadyUsed": true,
+    "Questions": [
+      {
+        "Content": "tresc pytania",
+        "Answers": [
+          {
+            "Content": "odpowiedz 1",
+            "IsCorrect": true
+          },
+          {
+            "Content": "odpowiedz 2",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "tresc pytania",
+        "Answers": [
+          {
+            "Content": "odpowiedz 1",
+            "IsCorrect": true
+          },
+          {
+            "Content": "odpowiedz 2",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "tresc pytania",
+        "Answers": [
+          {
+            "Content": "odpowiedz 1",
+            "IsCorrect": true
+          },
+          {
+            "Content": "odpowiedz 2",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+]

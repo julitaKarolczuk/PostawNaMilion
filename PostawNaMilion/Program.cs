@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using PostawNaMilion.Models;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +11,7 @@ namespace PostawNaMilion
 {
     class Program
     {
+        public IEnumerable<Category> Categories;
         public int award = 1000000;
         public int currentQuestionNumber = 1;
 
@@ -21,7 +25,7 @@ namespace PostawNaMilion
 
         public void ChooseCategory()
         {
-            Console.WriteLine("\n          Wybierz kategorie:\n 1. SPORT\n 2. KRÓLOWIE \n");
+            Console.WriteLine($"\n          Wybierz kategorie:\n 1. \n 2.  \n");
             string y = Console.ReadLine();
             int x = int.Parse(y);
             switch (x)
@@ -67,6 +71,7 @@ namespace PostawNaMilion
             {
                 if (sum == award)
                 {
+                   var x=  Categories.Where(cat => !cat.AlreadyUsed).Select(cat=> cat.Name);
                     Console.WriteLine("Czy jesteś pewny? Y-tak N-nie");
                     if (Console.ReadLine().Equals("Y", StringComparison.InvariantCultureIgnoreCase))
                     {
@@ -86,6 +91,14 @@ namespace PostawNaMilion
             }
         }
 
+        public void LoadData()
+        {
+            var streamReader = new StreamReader("data.json");
+            string jsonData = streamReader.ReadToEnd();
+
+            Categories = JsonConvert.DeserializeObject<IEnumerable<Category>>(jsonData);
+        }
+
         public int CheckAnswer(int[] array)
         {
             int correctAnswer = 0;//z bazy trzeba odpowiedzi numer
@@ -95,12 +108,14 @@ namespace PostawNaMilion
 
         public Program()
         {
+            LoadData();
             do
             {
                 DisplayAwardsLvl();
                 ChooseCategory();
+                currentQuestionNumber++;
                 Console.WriteLine(award);
-            } while (award != 0);
+            } while (award != 0 || currentQuestionNumber < 8);
         }
 
         static void Main(string[] args)
