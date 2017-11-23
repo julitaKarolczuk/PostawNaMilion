@@ -25,7 +25,13 @@ namespace PostawNaMilion
 
         public void ChooseCategory()
         {
-            Console.WriteLine($"\n          Wybierz kategorie:\n 1. \n 2.  \n");
+            var category1 = Categories.Where(cat => !cat.AlreadyUsed).Select(cat => cat.Name).First();
+            Categories.Where(cat => !cat.AlreadyUsed).First().AlreadyUsed = true;
+            var category2 = Categories.Where(cat => !cat.AlreadyUsed).Select(cat => cat.Name);
+
+
+
+            Console.WriteLine($"\n          Wybierz kategorie:\n 1. {category1} \n 2. {category2} \n");
             string y = Console.ReadLine();
             int x = int.Parse(y);
             switch (x)
