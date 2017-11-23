@@ -28,8 +28,11 @@ namespace PostawNaMilion
             string[] categories = new string[2]; ;
             for(var i = 0; i < categories.Length; i++)
             {
-                var c = Categories.Where(cat => cat.NotUsed).Select(cat => cat.Name).First();
-                categories[i] = c;
+                var types = Categories.Where(cat => cat.NotUsed).Select(cat => cat.Name).ToArray();
+                foreach(var type in types){
+                    categories[i] = type;
+                }
+                
                 Categories.Where(cat => cat.NotUsed).First().NotUsed = false;
             }
 
@@ -50,11 +53,18 @@ namespace PostawNaMilion
         public void BetAnswers( string category)
         {
             var sum = 0;
-            var question = Categories.Where(cat => cat.Name.Equals(category)).Select(c => c.Questions.Select(cate => cate.Content).First()).First();
+            var question = Categories.Where(cat => cat.Name.Equals(category)).Select(c => c.Questions.Select(cate => cate.Content).ToArray());
+            foreach(var q in question)
+            {
+                foreach(var qq in q)
+                {
+                    Console.WriteLine(qq);
+                }
+            }
             var arrayBetAmount = new int[3];
             string amount;
             var counter = 0;
-            Console.WriteLine($"\n   Sport\n{question}\nAnswer 1 ANSWER 2 ANSWER 3\nObstaw odpowiedzi: ");
+            Console.WriteLine($"\n      {category}\n{question}\nAnswer 1 ANSWER 2 ANSWER 3\nObstaw odpowiedzi: ");
             for (int i = 0; i < arrayBetAmount.Length; i++)
             {
                 amount = Console.ReadLine();
