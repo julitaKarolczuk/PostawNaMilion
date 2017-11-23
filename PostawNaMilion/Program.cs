@@ -18,7 +18,6 @@ namespace PostawNaMilion
 
         public void DisplayAwardsLvl()
         {
-            Console.WriteLine("\n          OLCIX-");
             Console.WriteLine("\n           -------POSTAW NA MILION-------");
             Console.WriteLine("\n          P1   P2  P3  P4  P5  P6  P7  P8");
 
