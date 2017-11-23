@@ -8,6 +8,6 @@ namespace PostawNaMilion.Models
 
         public IEnumerable<Question> Questions { get; set; }
 
-        public bool AlreadyUsed { get; set; }
+        public bool NotUsed { get; set; }
     }
 }

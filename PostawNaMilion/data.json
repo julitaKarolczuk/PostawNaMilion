@@ -1,7 +1,7 @@
 [
   {
     "Name": "Kategoria 1",
-    "AlreadyUsed": true,
+    "NotUsed": true,
     "Questions": [
       {
         "Content": "tresc pytania",
@@ -45,8 +45,8 @@
     ]
   },
   {
-    "Name": "Kategoria 1",
-    "AlreadyUsed": true,
+    "Name": "Kategoria 2",
+    "NotUsed": true,
     "Questions": [
       {
         "Content": "tresc pytania",

@@ -25,36 +25,36 @@ namespace PostawNaMilion
 
         public void ChooseCategory()
         {
-            var category1 = Categories.Where(cat => !cat.AlreadyUsed).Select(cat => cat.Name).First();
-            Categories.Where(cat => !cat.AlreadyUsed).First().AlreadyUsed = true;
-            var category2 = Categories.Where(cat => !cat.AlreadyUsed).Select(cat => cat.Name);
+            string[] categories = new string[2]; ;
+            for(var i = 0; i < categories.Length; i++)
+            {
+                var c = Categories.Where(cat => cat.NotUsed).Select(cat => cat.Name).First();
+                categories[i] = c;
+                Categories.Where(cat => cat.NotUsed).First().NotUsed = false;
+            }
 
-
-
-            Console.WriteLine($"\n          Wybierz kategorie:\n 1. {category1} \n 2. {category2} \n");
+            Console.WriteLine($"\n          Wybierz kategorie:\n 1. {categories[0]} \n 2. {categories[1]} \n");
             string y = Console.ReadLine();
             int x = int.Parse(y);
             switch (x)
             {
                 case 1:
-                    BetAnswers();
+                    BetAnswers(categories[0]);
                     break;
                 case 2:
-                    Console.WriteLine("\n   Królowie");
+                    BetAnswers(categories[1]);
                     break;
             }
         }
 
-        public void BetAnswers()
+        public void BetAnswers( string category)
         {
             var sum = 0;
+            var question = Categories.Where(cat => cat.Name.Equals(category)).Select(c => c.Questions.Select(cate => cate.Content).First()).First();
             var arrayBetAmount = new int[3];
             string amount;
             var counter = 0;
-            Console.WriteLine("\n   Sport");
-            Console.WriteLine("QUESTION");
-            Console.WriteLine("Answer 1 " + "ANSWER 2 " + "ANSWER 3");
-            Console.WriteLine("Obstaw odpowiedzi: ");
+            Console.WriteLine($"\n   Sport\n{question}\nAnswer 1 ANSWER 2 ANSWER 3\nObstaw odpowiedzi: ");
             for (int i = 0; i < arrayBetAmount.Length; i++)
             {
                 amount = Console.ReadLine();
@@ -71,13 +71,12 @@ namespace PostawNaMilion
             if (counter == 0)
             {
                 Console.WriteLine("Jedna odpowiedz ma byc za 0 zł, spróbuj ponownie");
-                BetAnswers();
+                BetAnswers(category);
             }
             else
             {
                 if (sum == award)
                 {
-                   var x=  Categories.Where(cat => !cat.AlreadyUsed).Select(cat=> cat.Name);
                     Console.WriteLine("Czy jesteś pewny? Y-tak N-nie");
                     if (Console.ReadLine().Equals("Y", StringComparison.InvariantCultureIgnoreCase))
                     {
@@ -86,13 +85,13 @@ namespace PostawNaMilion
                     else if (Console.ReadLine().Equals("N", StringComparison.InvariantCultureIgnoreCase))
                     {
                         Console.WriteLine("Wprowadź kwoty ponownie");
-                        BetAnswers();
+                        BetAnswers(category);
                     }
                 }
                 else
                 {
                     Console.WriteLine($"Żle rozłozone pieniążki, spróbuj ponownie, masz {award}");
-                    BetAnswers();
+                    BetAnswers(category);
                 }
             }
         }
