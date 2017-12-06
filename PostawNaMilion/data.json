@@ -1,10 +1,10 @@
 [
   {
-    "Name": "Pañstwa",
+    "Name": "Panstwa",
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "Które z tych pañstw ma najmniejsz¹ liczbê ludnoœci?",
+        "Content": "Ktore z tych panstw ma najmniejsza liczbe ludnosci?",
         "Answers": [
           {
             "Content": "Stany Zjednoczone",
@@ -25,7 +25,7 @@
         ]
       },
       {
-        "Content": "Które z pañstw bez dostêpu do morza jest najwiêksze?",
+        "Content": "Ktore z panstw bez dostepu do morza jest najwieksze?",
         "Answers": [
           {
             "Content": "Kazachstan",
@@ -46,22 +46,22 @@
         ]
       },
       {
-        "Content": "Cieœnina Beringa znajduje siê pomiêdzy:",
+        "Content": "Ciesnina Beringa znajduje sie pomiedzy:",
         "Answers": [
           {
-            "Content": "Finlandi¹ i Szwecj¹",
+            "Content": "Finlandia i Szwecja",
             "IsCorrect": false
           },
           {
-            "Content": "Pó³wyspem ba³kañskim i Azj¹ Mniejsz¹",
+            "Content": "Polwyspem balkanskim i Azja Mniejsza",
             "IsCorrect": false
           },
           {
-            "Content": "Alask¹ i Rosj¹",
+            "Content": "Alaska i Rosja",
             "IsCorrect": true
           },
           {
-            "Content": "Francj¹ i Wielk¹ Brytani¹",
+            "Content": "Francja i Wielka Brytania",
             "IsCorrect": false
           }
         ]
@@ -70,10 +70,10 @@
   },
   {
     "Name": "Sport",
-    "AlreadyUsed": true,
+    "NotUsed": true,
     "Questions": [
       {
-        "Content": "W jakiej konfederacji pi³karskiej wystêpuje reprezentacja Brazylii?",
+        "Content": "W jakiej konfederacji pilkarskiej wystepuje reprezentacja Brazylii?",
         "Answers": [
           {
             "Content": "UEFA",
@@ -94,10 +94,10 @@
         ]
       },
       {
-        "Content": "Której z wymienionych dru¿yn nie prowadzi³ (jako trener) œp.Janusz Wójcik?",
+        "Content": "Ktorej z wymienionych druzyn nie prowadzil (jako trener) sp.Janusz Wojcik?",
         "Answers": [
           {
-            "Content": "Jagiellonia Bia³ystok",
+            "Content": "Jagiellonia Bialystok",
             "IsCorrect": false
           },
           {
@@ -115,7 +115,7 @@
         ]
       },
       {
-        "Content": "Ile indywidualnych tytu³ów mistrza œwiata zdoby³ w swojej karierze Adam Ma³ysz?",
+        "Content": "Ile indywidualnych tytulow mistrza swiata zdobyl w swojej karierze Adam Malysz?",
         "Answers": [
           {
             "Content": "5",
@@ -142,10 +142,10 @@
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "Czasami siê wygrywa, czasami siê przegrywa, a czasami remisuje - kto tak powiedzia³?",
+        "Content": "Czasami sie wygrywa, czasami sie przegrywa, a czasami remisuje - kto tak powiedzial?",
         "Answers": [
           {
-            "Content": "Kazimierz Górski",
+            "Content": "Kazimierz Gorski",
             "IsCorrect": true
           },
           {
@@ -153,7 +153,7 @@
             "IsCorrect": false
           },
           {
-            "Content": "Adam Nawa³ka",
+            "Content": "Adam Nawalka",
             "IsCorrect": false
           },
           {
@@ -163,18 +163,18 @@
         ]
       },
       {
-        "Content": "Z którego filmu pochodzi to zdanie - A jako premiê dam ten bezcenny argentyñski kaktus?",
+        "Content": "Z ktorego filmu pochodzi to zdanie - A jako premie dam ten bezcenny argentynski kaktus?",
         "Answers": [
           {
             "Content": "Sztos",
             "IsCorrect": false
           },
           {
-            "Content": "Ch³opaki nie p³acz¹",
+            "Content": "Chlopaki nie placza",
             "IsCorrect": true
           },
           {
-            "Content": "Miœ",
+            "Content": "Mis",
             "IsCorrect": false
           },
           {
@@ -184,7 +184,7 @@
         ]
       },
       {
-        "Content": "Kto jest autorem tego cytatu: Dwa najwa¿niejsze dni w Twoim ¿yciu, to dzieñ w którym siê urodzi³eœ, i dzieñ, w którym odkry³eœ po co.",
+        "Content": "Kto jest autorem tego cytatu: Dwa najwazniejsze dni w Twoim zyciu, to dzien w ktorym siê urodziles, i dzien, w ktorym odkryles po co.",
         "Answers": [
           {
             "Content": "Marlon Brandon",
@@ -199,7 +199,7 @@
             "IsCorrect": true
           },
           {
-            "Content": "Jan Pawe³ II",
+            "Content": "Jan Pawel II",
             "IsCorrect": false
           }
         ]
@@ -211,7 +211,7 @@
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "Gdzie wybudowano pierwsz¹ liniê metra na œwiecie?",
+        "Content": "Gdzie wybudowano pierwsza linie metra na swiecie?",
         "Answers": [
           {
             "Content": "w Nowym Jorku",
@@ -222,7 +222,7 @@
             "IsCorrect": false
           },
           {
-            "Content": "w Pary¿u",
+            "Content": "w Paryzu",
             "IsCorrect": false
           },
           {
@@ -232,7 +232,7 @@
         ]
       },
       {
-        "Content": "Która z podanych budowli jest najwy¿sza?",
+        "Content": "Ktora z podanych budowli jest najwyzsza?",
         "Answers": [
           {
             "Content": "Empire State Building (USA)",
@@ -253,7 +253,7 @@
         ]
       },
       {
-        "Content": "Powiêkszony 165 miliardów razy, monumentalny model kryszta³u ¿elaza, znajduje siê w:",
+        "Content": "Powiekszony 165 miliardow razy, monumentalny model krysztalu zelaza, znajduje sie w:",
         "Answers": [
           {
             "Content": "w Berlinie",
@@ -276,11 +276,11 @@
     ]
   },
   {
-    "Name": "Cia³o i dusza",
+    "Name": "Cialo i dusza",
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "Lekarz specjalizuj¹cy siê w diagnostyce oraz prowadzeniu leczenia u osób z chorobami ¿y³ to:",
+        "Content": "Lekarz specjalizujacy sie w diagnostyce oraz prowadzeniu leczenia u osob z chorobami zyl to:",
         "Answers": [
           {
             "Content": "Angiolog",
@@ -312,7 +312,7 @@
             "IsCorrect": true
           },
           {
-            "Content": "Krêgos³upa",
+            "Content": "Kregoslupa",
             "IsCorrect": false
           },
           {
@@ -322,22 +322,22 @@
         ]
       },
       {
-        "Content": "Co oznacza skrót SARS?",
+        "Content": "Co oznacza skrot SARS?",
         "Answers": [
           {
-            "Content": "Gor¹czka krwotoczna",
+            "Content": "Goraczka krwotoczna",
             "IsCorrect": false
           },
           {
-            "Content": "Œwiñska grypa",
+            "Content": "Ptasia grypa",
             "IsCorrect": false
           },
           {
-            "Content": "Zespó³ ostrej niewydolnoœci oddechowej",
+            "Content": "Zespol ostrej niewydolnosci oddechowej",
             "IsCorrect": true
           },
           {
-            "Content": "Œwiñska grypa",
+            "Content": "Swinska grypa",
             "IsCorrect": false
           }
         ]
@@ -345,11 +345,11 @@
     ]
   },
   {
-    "Name": "Postêp i technika",
+    "Name": "Postep i technika",
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "W 1979 roku zosta³ zaprojektowany pierwszy laptop, który by³ sprzedawany komercyjnie. Jego nazwa to:",
+        "Content": "W 1979 roku zostal zaprojektowany pierwszy laptop, ktory byl sprzedawany komercyjnie. Jego nazwa to:",
         "Answers": [
           {
             "Content": "Grid Companss Computer 1109",
@@ -370,7 +370,7 @@
         ]
       },
       {
-        "Content": "Kiedy zosta³a wydana piewsza wersja systemu operacyjnego Windows",
+        "Content": "Kiedy zostala wydana piewsza wersja systemu operacyjnego Windows",
         "Answers": [
           {
             "Content": "w 1995r",
@@ -391,7 +391,7 @@
         ]
       },
       {
-        "Content": "Gdzie znajduje siê najwiêkszy europejski oœrodek petrochemiczny?",
+        "Content": "Gdzie znajduje sie najwiekszy europejski osrodek petrochemiczny?",
         "Answers": [
           {
             "Content": "w Lizbonie",
@@ -414,11 +414,11 @@
     ]
   },
   {
-    "Name": "W³adza i pieni¹dze",
+    "Name": "Wladza i pieniadze",
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "H&M jest skrótem od:",
+        "Content": "H&M jest skrotem od:",
         "Answers": [
           {
             "Content": "Hennes&Mauritez",
@@ -439,7 +439,7 @@
         ]
       },
       {
-        "Content": "W którym roku dolar amerykañski zosta³ oficjaln¹ walut¹ USA?",
+        "Content": "W ktorym roku dolar amerykanski zostal oficjalna waluta USA?",
         "Answers": [
           {
             "Content": "w 1870r",
@@ -460,7 +460,7 @@
         ]
       },
       {
-        "Content": "Gdzie mieœci siê siedziba ONZ?",
+        "Content": "Gdzie miesci sie siedziba ONZ?",
         "Answers": [
           {
             "Content": "w San Diego",
@@ -487,7 +487,7 @@
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "Która firma jest najwiêkszym œwiatowym producentem napojów alkoholowych?",
+        "Content": "Ktora firma jest najwiekszym swiatowym producentem napojow alkoholowych?",
         "Answers": [
           {
             "Content": "Diageo",
@@ -508,7 +508,7 @@
         ]
       },
       {
-        "Content": "Szwedzki specja³ ze sfermentowanych œledzi to:",
+        "Content": "Szwedzki specjal ze sfermentowanych sledzi to:",
         "Answers": [
           {
             "Content": "Surstromming",
@@ -529,7 +529,7 @@
         ]
       },
       {
-        "Content": "Które z poni¿szych nie jest u¿ywane w piekarni?",
+        "Content": "Ktore z ponizszych nie jest uzywane w piekarni?",
         "Answers": [
           {
             "Content": "paleta",
@@ -544,7 +544,7 @@
             "IsCorrect": false
           },
           {
-            "Content": "Kosz do wypieków",
+            "Content": "Kosz do wypiekow",
             "IsCorrect": false
           }
         ]
@@ -556,7 +556,7 @@
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "W którym roku odnaleziono obraz Claude`a Moneta Pla¿a w Pourville, skradziony z Muzeum Narodowego we wrzeœniu 2000 roku?",
+        "Content": "W ktorym roku odnaleziono obraz Claude`a Moneta Plaza w Pourville, skradziony z Muzeum Narodowego we wrzesniu 2000 roku?",
         "Answers": [
           {
             "Content": "w 2005r",
@@ -577,7 +577,7 @@
         ]
       },
       {
-        "Content": "Ile pi³eczek golfowych znajduje siê na Ksiê¿ycu?",
+        "Content": "Ile pileczek golfowych znajduje sie na Ksiezycu?",
         "Answers": [
           {
             "Content": "Dwie",
@@ -588,32 +588,32 @@
             "IsCorrect": false
           },
           {
-            "Content": "¯adna",
+            "Content": "Zadna",
             "IsCorrect": false
           },
           {
-            "Content": "Dziesiêæ",
+            "Content": "Dziesiec",
             "IsCorrect": false
           }
         ]
       },
       {
-        "Content": "Ile by³o ofiar tsunami, które uderzy³o w wybrze¿e Po³udniowo-Wschodniej Azji w 2004 roku?",
+        "Content": "Ile bylo ofiar tsunami, ktore uderzylo w wybrzeze Poludniowo-Wschodniej Azji w 2004 roku?",
         "Answers": [
           {
-            "Content": "Oko³o 195 000",
+            "Content": "Okolo 195 000",
             "IsCorrect": false
           },
           {
-            "Content": "Oko³o 373 000",
+            "Content": "Okolo 373 000",
             "IsCorrect": false
           },
           {
-            "Content": "Oko³o 512 000",
+            "Content": "Okolo 512 000",
             "IsCorrect": false
           },
           {
-            "Content": "Oko³o 294 000",
+            "Content": "Okolo 294 000",
             "IsCorrect": true
           }
         ]
@@ -625,14 +625,14 @@
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "Efekt iluzjonistyczny polegaj¹cy na efektywnych ucieczkach z klatek, wiêzów i kajdanek nazywa siê:",
+        "Content": "Efekt iluzjonistyczny polegajacy na efektywnych ucieczkach z klatek, wiezow i kajdanek nazywa sie:",
         "Answers": [
           {
-            "Content": "Eskapologi¹",
+            "Content": "Eskapologia",
             "IsCorrect": true
           },
           {
-            "Content": "Eskapad¹",
+            "Content": "Eskapada",
             "IsCorrect": false
           },
           {
@@ -646,7 +646,7 @@
         ]
       },
       {
-        "Content": "W którym programie TV uczestnicy zostaj¹ zamkniêci w domu na ponad 100dni?",
+        "Content": "W ktorym programie TV uczestnicy zostaja zamknieci w domu na ponad 100dni?",
         "Answers": [
           {
             "Content": "Celebrity Rehab z dr Drew",
@@ -667,7 +667,7 @@
         ]
       },
       {
-        "Content": "Kto prowadzi³ teleturniej Krzy¿ówka dla nastolatków - Œwiatowid?",
+        "Content": "Kto prowadzil teleturniej Krzyzowka dla nastolatkow - Swiatowid?",
         "Answers": [
           {
             "Content": "Andrzej Piaseczny",
@@ -690,11 +690,11 @@
     ]
   },
   {
-    "Name": "Mówi¹ wieki",
+    "Name": "Mówia wieki",
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "W którym roku odby³ siê Bunt ¯eligowskiego, w którym zosta³o zajête przez Polaków Wilno",
+        "Content": "W ktorym roku odbyl sie Bunt Zeligowskiego, w ktorym zostalo zajete przez Polakow Wilno",
         "Answers": [
           {
             "Content": "w 1920r",
@@ -715,10 +715,10 @@
         ]
       },
       {
-        "Content": "Z jakiego kraju wywodzi³ siê król Zygmunt III Waza",
+        "Content": "Z jakiego kraju wywodzil sie krol Zygmunt III Waza",
         "Answers": [
           {
-            "Content": "z Wêgier",
+            "Content": "z Wegier",
             "IsCorrect": false
           },
           {
@@ -763,7 +763,7 @@
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "Wszystkie pierwiastki grupy 17. uk³adu okresowego to:",
+        "Content": "Wszystkie pierwiastki grupy 17. ukladu okresowego to:",
         "Answers": [
           {
             "Content": "Halogeny",
@@ -778,13 +778,13 @@
             "IsCorrect": false
           },
           {
-            "Content": "Pó³metale",
+            "Content": "Polmetale",
             "IsCorrect": false
           }
         ]
       },
       {
-        "Content": "Powierzchnia której planety podobna jest do ukszta³towania Ksiê¿yca",
+        "Content": "Powierzchnia ktorej planety podobna jest do uksztaltowania Ksiezyca",
         "Answers": [
           {
             "Content": "Wenus",
@@ -805,22 +805,22 @@
         ]
       },
       {
-        "Content": "Jak¹ energiê posiada stoj¹cy rower?",
+        "Content": "Jak¹ energie posiada stojacy rower?",
         "Answers": [
           {
-            "Content": "Kinetyczn¹",
+            "Content": "Kinetyczna",
             "IsCorrect": false
           },
           {
-            "Content": "Mechaniczn¹",
+            "Content": "Mechaniczna",
             "IsCorrect": false
           },
           {
-            "Content": "Potencjaln¹",
+            "Content": "Potencjalna",
             "IsCorrect": true
           },
           {
-            "Content": "Chemiczn¹",
+            "Content": "Chemiczna",
             "IsCorrect": false
           }
         ]
@@ -828,11 +828,11 @@
     ]
   },
   {
-    "Name": "Narysowany œwiat",
+    "Name": "Narysowany swiat",
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "W którym komiksie mo¿na przeczytaæ o grupie istot, które nale¿¹ do nowego gatunku ludzkiego - Homo Superior?",
+        "Content": "W ktorym komiksie mozna przeczytac o grupie istot, ktore naleza do nowego gatunku ludzkiego - Homo Superior?",
         "Answers": [
           {
             "Content": "X-man",
@@ -853,7 +853,7 @@
         ]
       },
       {
-        "Content": "Jak nazywa siê francuski scenarzysta i pisarz, jeden z najbardziej znanych twórców komiksu europejskiego?",
+        "Content": "Jak nazywa sie francuski scenarzysta i pisarz, jeden z najbardziej znanych tworcow komiksu europejskiego?",
         "Answers": [
           {
             "Content": "Stan Lee",
@@ -874,18 +874,18 @@
         ]
       },
       {
-        "Content": "Z jakiego komiksu pochodzi zwrot - W Pacanowie kozy kuj¹",
+        "Content": "Z jakiego komiksu pochodzi zwrot - W Pacanowie kozy kuja?",
         "Answers": [
           {
-            "Content": "Komisarz ¯bik",
+            "Content": "Komisarz Zbik",
             "IsCorrect": false
           },
           {
-            "Content": "Kozio³ek Mato³ek",
+            "Content": "Koziolek Matolek",
             "IsCorrect": true
           },
           {
-            "Content": "Z Pacanowa opowieœci",
+            "Content": "Z Pacanowa opowiesci",
             "IsCorrect": false
           },
           {
@@ -901,7 +901,7 @@
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "Jakiej d³ugoœci cia³o maj¹ przeciêtnie doros³e lisy (z ogonem)",
+        "Content": "Jakiej dlugosci cialo maja przecietnie dorosle lisy (z ogonem)?",
         "Answers": [
           {
             "Content": "1,1m",
@@ -922,7 +922,7 @@
         ]
       },
       {
-        "Content": "Jak w gwarze myœliwskiej nazywana jest samica wilka?",
+        "Content": "Jak w gwarze mysliwskiej nazywana jest samica wilka?",
         "Answers": [
           {
             "Content": "Wadera",
@@ -943,14 +943,14 @@
         ]
       },
       {
-        "Content": "Która z wymienionych jest roœlin¹ owado¿ern¹?",
+        "Content": "Ktora z wymienionych jest roslina owadozerna?",
         "Answers": [
           {
-            "Content": "PodejŸrzon ksiê¿ycowy",
+            "Content": "Podejzrzon ksiezycowy",
             "IsCorrect": false
           },
           {
-            "Content": "Rosiczka okr¹g³olistna",
+            "Content": "Rosiczka okraglolistna",
             "IsCorrect": true
           },
           {
@@ -958,7 +958,7 @@
             "IsCorrect": false
           },
           {
-            "Content": "Stroiczka rozdêta",
+            "Content": "Stroiczka rozdeta",
             "IsCorrect": false
           }
         ]
@@ -966,26 +966,26 @@
     ]
   },
   {
-    "Name": "Wierzenia i przes¹dy",
+    "Name": "Wierzenia i przesady",
     "NotUsed": true,
     "Questions": [
       {
-        "Content": "Które z tych miejsc religijnych nie znajduje siê w Jerozolimie?",
+        "Content": "Ktore z tych miejsc religijnych nie znajduje siê w Jerozolimie?",
         "Answers": [
           {
             "Content": "Al-Kaba",
             "IsCorrect": true
           },
           {
-            "Content": "Œciana p³aczu",
+            "Content": "Sciana placzu",
             "IsCorrect": false
           },
           {
-            "Content": "Wzgórze œwi¹tynne",
+            "Content": "Wzgorze swiatynne",
             "IsCorrect": false
           },
           {
-            "Content": "Kopu³a na Skale",
+            "Content": "Kopula na Skale",
             "IsCorrect": false
           }
         ]
@@ -1012,7 +1012,7 @@
         ]
       },
       {
-        "Content": "Do którego od³amu islamu nale¿y wiêkszoœæ muzu³mañskich Irañczyków?",
+        "Content": "Do ktorego odlamu islamu nalezy wiekszosc muzulmanskich Iranczykow?",
         "Answers": [
           {
             "Content": "Sunnici",
@@ -1023,7 +1023,7 @@
             "IsCorrect": true
           },
           {
-            "Content": "Prawos³awni",
+            "Content": "Prawoslawni",
             "IsCorrect": false
           },
           {
