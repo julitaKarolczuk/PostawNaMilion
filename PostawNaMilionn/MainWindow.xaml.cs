@@ -24,36 +24,19 @@ namespace PostawNaMilionn
 
     public partial class MainWindow : Window
     {
+        public Random rnd = new Random();
+
         public int award = 1000000;
         public int correctAnswerIndex = 0;
         public int currentQuestionNumber = 1;
+
         public int[] amount = new int[4];
+
         public Answer[] answers;
         public IEnumerable<Category> Categories;
-        public Random rnd = new Random();
+
         public Category currentCategory;
         public Question currentQuestion;
-
-        private void NumericOnly(System.Object sender, System.Windows.Input.TextCompositionEventArgs e)
-        {
-            e.Handled = IsTextNumeric(e.Text);
-
-        }
-
-        private static bool IsTextNumeric(string str)
-        {
-            System.Text.RegularExpressions.Regex reg = new System.Text.RegularExpressions.Regex("[^0-9]");
-            return reg.IsMatch(str);
-
-        }
-
-        public void LoadData()
-        {
-            var streamReader = new StreamReader("DataFile.json");
-            string jsonData = streamReader.ReadToEnd();
-
-            Categories = JsonConvert.DeserializeObject<IEnumerable<Category>>(jsonData);
-        }
 
         public MainWindow()
         {
@@ -62,17 +45,7 @@ namespace PostawNaMilionn
             DisplayLevels();
         }
 
-        private void ShowCategories()
-        {
-            var categories = Categories.Where(cat => cat.NotUsed)
-              .OrderBy(x => rnd.Next())
-              .Take(2)
-              .ToArray();
-
-            Category1.Content = categories[0].Name;
-            Category2.Content = categories[1].Name;
-        }
-
+        #region Handlers
         private void Submit(object sender, RoutedEventArgs e)
         {
             if (StartWindow.IsVisible)
@@ -121,26 +94,9 @@ namespace PostawNaMilionn
             }
         }
 
-        private void ShowResult()
+        private void NumericOnly(object sender, TextCompositionEventArgs e)
         {
-            button.Visibility = button.IsVisible ? Visibility.Hidden : Visibility.Visible;
-            for (var i = 0; i < answers.Length; i++)
-            {
-                if (currentQuestion.Answers.FirstOrDefault(a => a.IsCorrect).Content == answers[i].Content)
-                {
-                    correctAnswerIndex = i;
-                    award = amount[i];
-                }
-            }
-
-            Result.Content = $"{currentQuestion.Content}   {currentQuestion.Answers.FirstOrDefault(a => a.IsCorrect).Content}\n\n WYGRAŁEŚ: {award}";
-            if (award == 0)
-            {
-                ResultContent.Visibility = ResultContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                SummaryContent.Visibility = SummaryContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                Summary.Content = $"KONIEC GRY PRZEEBAŁEŚ HAJS";
-            }
-
+            e.Handled = IsTextNumeric(e.Text);
         }
 
         private void SelectCategory(object sender, RoutedEventArgs e)
@@ -172,13 +128,77 @@ namespace PostawNaMilionn
 
         private void ReTry(object sender, RoutedEventArgs e)
         {
-            SummaryContent.Visibility = SummaryContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
-            award = 1000000;
-            currentQuestionNumber = 0;
-            //img na hidden poustawiac, jak sie przegra, bo zostają okejki; CASE 1 może zrobic i tam poustawiac na wartosci startowe wszystko jak ma byc
+            InitializeVariables();
+            ClearBets();
             DisplayLevels();
         }
+        #endregion Handlers
 
+        #region Helpers
+        private void InitializeVariables()
+        {
+            award = 1000000;
+            currentQuestionNumber = 1;
+            SummaryContent.Visibility = SummaryContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
+
+            #region images
+            P7.Visibility = P6.Visibility = P5.Visibility = P4.Visibility = P3.Visibility = P2.Visibility= P1.Visibility = Visibility.Visible;
+            img7.Visibility = img6.Visibility = img5.Visibility = img4.Visibility = img3.Visibility = img2.Visibility = img1.Visibility = Visibility.Hidden;
+            #endregion images
+        }
+
+        private static bool IsTextNumeric(string str)
+        {
+            System.Text.RegularExpressions.Regex reg = new System.Text.RegularExpressions.Regex("[^0-9]");
+            return reg.IsMatch(str);
+        }
+
+        public void ClearBets()
+        {
+            betAnswer1.Text = betAnswer2.Text = betAnswer3.Text = betAnswer4.Text = "0";
+        }
+
+        public void LoadData()
+        {
+            var streamReader = new StreamReader("DataFile.json");
+            string jsonData = streamReader.ReadToEnd();
+
+            Categories = JsonConvert.DeserializeObject<IEnumerable<Category>>(jsonData);
+        }
+
+        private void ShowCategories()
+        {
+            var categories = Categories.Where(cat => cat.NotUsed)
+              .OrderBy(x => rnd.Next())
+              .Take(2)
+              .ToArray();
+
+            Category1.Content = categories[0].Name;
+            Category2.Content = categories[1].Name;
+        }
+
+        private void ShowResult()
+        {
+            button.Visibility = button.IsVisible ? Visibility.Hidden : Visibility.Visible;
+            for (var i = 0; i < answers.Length; i++)
+            {
+                if (currentQuestion.Answers.FirstOrDefault(a => a.IsCorrect).Content == answers[i].Content)
+                {
+                    correctAnswerIndex = i;
+                    award = amount[i];
+                    ClearBets();
+                }
+            }
+
+            Result.Content = $"{currentQuestion.Content}   {currentQuestion.Answers.FirstOrDefault(a => a.IsCorrect).Content}\n\n WYGRAŁEŚ: {award}";
+            if (award == 0)
+            {
+                ResultContent.Visibility = ResultContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
+                SummaryContent.Visibility = SummaryContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
+                Summary.Content = "KONIEC GRY";
+            }
+
+        }
 
         private void DisplayLevels()
         {
@@ -188,63 +208,43 @@ namespace PostawNaMilionn
             switch (currentQuestionNumber)
             {
                 case 8:
-                    if (currentQuestionNumber == 8)
-                    {
-                        P7.Visibility = P7.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                        img7.Visibility = img7.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                    }
+                    P7.Visibility = Visibility.Hidden;
+                    img7.Visibility = Visibility.Visible;
 
                     goto case 7;
                 case 7:
-                    if (currentQuestionNumber == 7)
-                    {
-                        P6.Visibility = P6.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                        img6.Visibility = img6.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                    }
+                    P6.Visibility = Visibility.Hidden;
+                    img6.Visibility = Visibility.Visible;
 
                     goto case 6;
                 case 6:
-                    if (currentQuestionNumber == 6)
-                    {
-                        P5.Visibility = P5.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                        img5.Visibility = img5.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                    }
+                    P5.Visibility = Visibility.Hidden;
+                    img5.Visibility = Visibility.Visible;
 
                     goto case 5;
                 case 5:
-                    if (currentQuestionNumber == 5)
-                    {
-                        P4.Visibility = P4.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                        img4.Visibility = img4.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                    }
+                    P4.Visibility = Visibility.Hidden;
+                    img4.Visibility = Visibility.Visible;
 
                     goto case 4;
                 case 4:
-                    if (currentQuestionNumber == 4)
-                    {
-                        P3.Visibility = P3.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                        img3.Visibility = img3.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                    }
+                    P3.Visibility = Visibility.Hidden;
+                    img3.Visibility = Visibility.Visible;
 
                     goto case 3;
                 case 3:
-                    if (currentQuestionNumber == 3)
-                    {
-                        P2.Visibility = P2.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                        img2.Visibility = img2.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                    }
+                    P2.Visibility = Visibility.Hidden;
+                    img2.Visibility = Visibility.Visible;
 
                     goto case 2;
                 case 2:
-                    if (currentQuestionNumber == 2)
-                    {
-                        P1.Visibility = P1.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                        img1.Visibility = img1.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                    }
+                    P1.Visibility = Visibility.Hidden;
+                    img1.Visibility = Visibility.Visible;
 
                     break;
 
             }
         }
+        #endregion Helpers
     }
 }
