@@ -1,0 +1,1037 @@
+﻿[
+  {
+    "Name": "Panstwa",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "Ktore z tych panstw ma najmniejsza liczbe ludnosci?",
+        "Answers": [
+          {
+            "Content": "Stany Zjednoczone",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Brazylia",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Indonezja",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Pakistan",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Ktore z panstw bez dostepu do morza jest najwieksze?",
+        "Answers": [
+          {
+            "Content": "Kazachstan",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Boliwia",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Mongolia",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Pakistan",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Ciesnina Beringa znajduje sie pomiedzy:",
+        "Answers": [
+          {
+            "Content": "Finlandia i Szwecja",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Polwyspem balkanskim i Azja Mniejsza",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Alaska i Rosja",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Francja i Wielka Brytania",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Sport",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "W jakiej konfederacji pilkarskiej wystepuje reprezentacja Brazylii?",
+        "Answers": [
+          {
+            "Content": "UEFA",
+            "IsCorrect": false
+          },
+          {
+            "Content": "CAF",
+            "IsCorrect": false
+          },
+          {
+            "Content": "CONMEBOL",
+            "IsCorrect": true
+          },
+          {
+            "Content": "AFC",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Ktorej z wymienionych druzyn nie prowadzil (jako trener) sp.Janusz Wojcik?",
+        "Answers": [
+          {
+            "Content": "Jagiellonia Bialystok",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Anorthosis Famagusta",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Legia Warszawa",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Polonia Warszawa",
+            "IsCorrect": true
+          }
+        ]
+      },
+      {
+        "Content": "Ile indywidualnych tytulow mistrza swiata zdobyl w swojej karierze Adam Malysz?",
+        "Answers": [
+          {
+            "Content": "5",
+            "IsCorrect": false
+          },
+          {
+            "Content": "3",
+            "IsCorrect": false
+          },
+          {
+            "Content": "2",
+            "IsCorrect": false
+          },
+          {
+            "Content": "4",
+            "IsCorrect": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Cytaty",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "Czasami sie wygrywa, czasami sie przegrywa, a czasami remisuje - kto tak powiedzial?",
+        "Answers": [
+          {
+            "Content": "Kazimierz Gorski",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Franciszek Smuda",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Adam Nawalka",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Leo Beenhakker",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Z ktorego filmu pochodzi to zdanie - A jako premie dam ten bezcenny argentynski kaktus?",
+        "Answers": [
+          {
+            "Content": "Sztos",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Chlopaki nie placza",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Mis",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Seksmisja",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Kto jest autorem tego cytatu: Dwa najwazniejsze dni w Twoim zyciu, to dzien w ktorym się urodziles, i dzien, w ktorym odkryles po co.",
+        "Answers": [
+          {
+            "Content": "Marlon Brandon",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Albert Einstein",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Mark Twain",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Jan Pawel II",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Architektura",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "Gdzie wybudowano pierwsza linie metra na swiecie?",
+        "Answers": [
+          {
+            "Content": "w Nowym Jorku",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w Moskwie",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w Paryzu",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w Londynie",
+            "IsCorrect": true
+          }
+        ]
+      },
+      {
+        "Content": "Ktora z podanych budowli jest najwyzsza?",
+        "Answers": [
+          {
+            "Content": "Empire State Building (USA)",
+            "IsCorrect": false
+          },
+          {
+            "Content": "CN Tower (Kanada)",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Taipei 101 (Tajwan)",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Petronas Tower(Malezja)",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Powiekszony 165 miliardow razy, monumentalny model krysztalu zelaza, znajduje sie w:",
+        "Answers": [
+          {
+            "Content": "w Berlinie",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w Amsterdamie",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w Brukseli",
+            "IsCorrect": true
+          },
+          {
+            "Content": "w Luksemburgu",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Cialo i dusza",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "Lekarz specjalizujacy sie w diagnostyce oraz prowadzeniu leczenia u osob z chorobami zyl to:",
+        "Answers": [
+          {
+            "Content": "Angiolog",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Proktolog",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Geriatiolog",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Hematolog",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Wiek kostny dziecka oceniamy poprzez zdjęcie RTG:",
+        "Answers": [
+          {
+            "Content": "Czaszki",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Przedramienia",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Kregoslupa",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Stopy",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Co oznacza skrot SARS?",
+        "Answers": [
+          {
+            "Content": "Goraczka krwotoczna",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Ptasia grypa",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Zespol ostrej niewydolnosci oddechowej",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Swinska grypa",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Postep i technika",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "W 1979 roku zostal zaprojektowany pierwszy laptop, ktory byl sprzedawany komercyjnie. Jego nazwa to:",
+        "Answers": [
+          {
+            "Content": "Grid Companss Computer 1109",
+            "IsCorrect": true
+          },
+          {
+            "Content": "IBM PC 5150",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Epson HX-20",
+            "IsCorrect": false
+          },
+          {
+            "Content": "DYNABOOK",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Kiedy zostala wydana piewsza wersja systemu operacyjnego Windows",
+        "Answers": [
+          {
+            "Content": "w 1995r",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w 1990r",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w 1985r",
+            "IsCorrect": true
+          },
+          {
+            "Content": "w 1980r",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Gdzie znajduje sie najwiekszy europejski osrodek petrochemiczny?",
+        "Answers": [
+          {
+            "Content": "w Lizbonie",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w Antwerpii",
+            "IsCorrect": true
+          },
+          {
+            "Content": "w Marsylii",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w Petersburgu",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Wladza i pieniadze",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "H&M jest skrotem od:",
+        "Answers": [
+          {
+            "Content": "Hennes&Mauritez",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Hermes&Mikey",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Hennes&Markus",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Hers&Mine",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "W ktorym roku dolar amerykanski zostal oficjalna waluta USA?",
+        "Answers": [
+          {
+            "Content": "w 1870r",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w 1875r",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w 1785r",
+            "IsCorrect": true
+          },
+          {
+            "Content": "w 1775r",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Gdzie miesci sie siedziba ONZ?",
+        "Answers": [
+          {
+            "Content": "w San Diego",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w Nowym Jorku",
+            "IsCorrect": true
+          },
+          {
+            "Content": "w Waszyngtonie",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w Los Angeles",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Chleb i wino",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "Ktora firma jest najwiekszym swiatowym producentem napojow alkoholowych?",
+        "Answers": [
+          {
+            "Content": "Diageo",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Wine&Spirits",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Bacardi",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Pernod Rickard",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Szwedzki specjal ze sfermentowanych sledzi to:",
+        "Answers": [
+          {
+            "Content": "Surstromming",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Vasterbotten",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Lussekatter",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Rabarberkaka",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Ktore z ponizszych nie jest uzywane w piekarni?",
+        "Answers": [
+          {
+            "Content": "paleta",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Laker",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Piec",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Kosz do wypiekow",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "XXI wiek",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "W ktorym roku odnaleziono obraz Claude`a Moneta Plaza w Pourville, skradziony z Muzeum Narodowego we wrzesniu 2000 roku?",
+        "Answers": [
+          {
+            "Content": "w 2005r",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w 2010r",
+            "IsCorrect": true
+          },
+          {
+            "Content": "w 2013r",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w 2011r",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Ile pileczek golfowych znajduje sie na Ksiezycu?",
+        "Answers": [
+          {
+            "Content": "Dwie",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Sto jeden",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Zadna",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Dziesiec",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Ile bylo ofiar tsunami, ktore uderzylo w wybrzeze Poludniowo-Wschodniej Azji w 2004 roku?",
+        "Answers": [
+          {
+            "Content": "Okolo 195 000",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Okolo 373 000",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Okolo 512 000",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Okolo 294 000",
+            "IsCorrect": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Rozrywka",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "Efekt iluzjonistyczny polegajacy na efektywnych ucieczkach z klatek, wiezow i kajdanek nazywa sie:",
+        "Answers": [
+          {
+            "Content": "Eskapologia",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Eskapada",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Parlor magic",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Platform magic",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "W ktorym programie TV uczestnicy zostaja zamknieci w domu na ponad 100dni?",
+        "Answers": [
+          {
+            "Content": "Celebrity Rehab z dr Drew",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Hotel Paradise",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Big Brother",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Fort Boyard",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Kto prowadzil teleturniej Krzyzowka dla nastolatkow - Swiatowid?",
+        "Answers": [
+          {
+            "Content": "Andrzej Piaseczny",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Andrzej Najman",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Wojciech Mann",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Krzysztof Materna",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Mówia wieki",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "W ktorym roku odbyl sie Bunt Zeligowskiego, w ktorym zostalo zajete przez Polakow Wilno",
+        "Answers": [
+          {
+            "Content": "w 1920r",
+            "IsCorrect": true
+          },
+          {
+            "Content": "w 1924r",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w 1928r",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w 1922r",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Z jakiego kraju wywodzil sie krol Zygmunt III Waza",
+        "Answers": [
+          {
+            "Content": "z Wegier",
+            "IsCorrect": false
+          },
+          {
+            "Content": "z Francji",
+            "IsCorrect": false
+          },
+          {
+            "Content": "ze Szwecji",
+            "IsCorrect": true
+          },
+          {
+            "Content": "z Wielkiej Brytanii",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "W czym noszono rzymskiego patrycjusza?",
+        "Answers": [
+          {
+            "Content": "w rykszy",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w lektyce",
+            "IsCorrect": true
+          },
+          {
+            "Content": "w faetonie",
+            "IsCorrect": false
+          },
+          {
+            "Content": "w rydwanie",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "W laboratorium",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "Wszystkie pierwiastki grupy 17. ukladu okresowego to:",
+        "Answers": [
+          {
+            "Content": "Halogeny",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Gazy szlachetne",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Metale",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Polmetale",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Powierzchnia ktorej planety podobna jest do uksztaltowania Ksiezyca",
+        "Answers": [
+          {
+            "Content": "Wenus",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Uranu",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Merkurego",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Saturna",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Jaką energie posiada stojacy rower?",
+        "Answers": [
+          {
+            "Content": "Kinetyczna",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Mechaniczna",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Potencjalna",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Chemiczna",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Narysowany swiat",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "W ktorym komiksie mozna przeczytac o grupie istot, ktore naleza do nowego gatunku ludzkiego - Homo Superior?",
+        "Answers": [
+          {
+            "Content": "X-man",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Batman",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Superman",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Magnum",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Jak nazywa sie francuski scenarzysta i pisarz, jeden z najbardziej znanych tworcow komiksu europejskiego?",
+        "Answers": [
+          {
+            "Content": "Stan Lee",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Tintin",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Rene Goscinny",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Don Rosa",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Z jakiego komiksu pochodzi zwrot - W Pacanowie kozy kuja?",
+        "Answers": [
+          {
+            "Content": "Komisarz Zbik",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Koziolek Matolek",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Z Pacanowa opowiesci",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Tytus, Romek i Atomek",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Dziki instynkt",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "Jakiej dlugosci cialo maja przecietnie dorosle lisy (z ogonem)?",
+        "Answers": [
+          {
+            "Content": "1,1m",
+            "IsCorrect": true
+          },
+          {
+            "Content": "1,5m",
+            "IsCorrect": false
+          },
+          {
+            "Content": "0,9m",
+            "IsCorrect": false
+          },
+          {
+            "Content": "0,75m",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Jak w gwarze mysliwskiej nazywana jest samica wilka?",
+        "Answers": [
+          {
+            "Content": "Wadera",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Kierdla",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Siuta",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Tryka",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Ktora z wymienionych jest roslina owadozerna?",
+        "Answers": [
+          {
+            "Content": "Podejzrzon ksiezycowy",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Rosiczka okraglolistna",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Bluszczyk kurdybanek",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Stroiczka rozdeta",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Wierzenia i przesady",
+    "NotUsed": true,
+    "Questions": [
+      {
+        "Content": "Ktore z tych miejsc religijnych nie znajduje się w Jerozolimie?",
+        "Answers": [
+          {
+            "Content": "Al-Kaba",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Sciana placzu",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Wzgorze swiatynne",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Kopula na Skale",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Shiva jest czasem przedstawiany jako symbol falliczny. Jak nazywa się ten symbol?",
+        "Answers": [
+          {
+            "Content": "Lincol",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Lingonberry",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Lingam",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Lindolm",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Content": "Do ktorego odlamu islamu nalezy wiekszosc muzulmanskich Iranczykow?",
+        "Answers": [
+          {
+            "Content": "Sunnici",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Sufi",
+            "IsCorrect": true
+          },
+          {
+            "Content": "Prawoslawni",
+            "IsCorrect": false
+          },
+          {
+            "Content": "Szyici",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+]
