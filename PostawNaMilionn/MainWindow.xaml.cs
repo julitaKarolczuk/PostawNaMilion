@@ -48,34 +48,6 @@ namespace PostawNaMilionn
         }
 
         #region Handlers
-        [DllImport("Kernel32")]
-        public static extern void AllocConsole();
-
-        [DllImport("Kernel32", SetLastError = true)]
-        public static extern void FreeConsole();
-        [DllImport("Kernel32")]
-        public static extern bool SetConsoleCtrlHandler(HandlerRoutine Handler, bool Add);
-
-        public enum CtrlTypes
-        {
-            CTRL_C_EVENT = 0,
-            CTRL_BREAK_EVENT,
-            CTRL_CLOSE_EVENT,
-            CTRL_LOGOFF_EVENT = 5,
-            CTRL_SHUTDOWN_EVENT
-        }
-
-        public delegate bool HandlerRoutine(CtrlTypes CtrlType);
-
-
-        private static bool ConsoleCtrlCheck(CtrlTypes ctrlType)
-        {
-            FreeConsole();
-            String[] s = { };
-
-            PostawNaMilion.Program.Main(s);
-            return true;
-        }
 
         private void Submit(object sender, RoutedEventArgs e)
         {
@@ -163,15 +135,6 @@ namespace PostawNaMilionn
             InitializeVariables();
             ClearBets();
             DisplayLevels();
-        }
-
-        private void RunConsoleApp(object sender, RoutedEventArgs e)
-        {
-            FreeConsole();
-            AllocConsole();
-            String[] s = { };
-            PostawNaMilion.Program.Main(s);
-            SetConsoleCtrlHandler(new HandlerRoutine(ConsoleCtrlCheck), true);
         }
         #endregion Handlers
 
