@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -42,17 +43,47 @@ namespace PostawNaMilionn
         {
             InitializeComponent();
             LoadData();
-            DisplayLevels();
+            SubmitButton.Content = "Dalej";
+            AmountLabel.Content = $"Kwota: 1000000";
         }
 
         #region Handlers
+        [DllImport("Kernel32")]
+        public static extern void AllocConsole();
+
+        [DllImport("Kernel32", SetLastError = true)]
+        public static extern void FreeConsole();
+        [DllImport("Kernel32")]
+        public static extern bool SetConsoleCtrlHandler(HandlerRoutine Handler, bool Add);
+
+        public enum CtrlTypes
+        {
+            CTRL_C_EVENT = 0,
+            CTRL_BREAK_EVENT,
+            CTRL_CLOSE_EVENT,
+            CTRL_LOGOFF_EVENT = 5,
+            CTRL_SHUTDOWN_EVENT
+        }
+
+        public delegate bool HandlerRoutine(CtrlTypes CtrlType);
+
+
+        private static bool ConsoleCtrlCheck(CtrlTypes ctrlType)
+        {
+            FreeConsole();
+            String[] s = { };
+
+            PostawNaMilion.Program.Main(s);
+            return true;
+        }
+
         private void Submit(object sender, RoutedEventArgs e)
         {
             if (StartWindow.IsVisible)
             {
                 StartWindow.Visibility = StartWindow.IsVisible ? Visibility.Hidden : Visibility.Visible;
                 CategoryContent.Visibility = CategoryContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
-                button.Visibility = button.IsVisible ? Visibility.Hidden : Visibility.Visible;
+                SubmitButton.Visibility = SubmitButton.IsVisible ? Visibility.Hidden : Visibility.Visible;
 
                 ShowCategories();
 
@@ -106,18 +137,19 @@ namespace PostawNaMilionn
             currentQuestion = currentCategory.Questions
                 .OrderBy(x => rnd.Next())
                 .FirstOrDefault();
-            QuestionContent.Content = currentQuestion.Content;
+            QuestionContent.Text = currentQuestion.Content;
 
             answers = currentQuestion.Answers.ToArray();
-            Answer1.Content = answers[0].Content;
-            Answer2.Content = answers[1].Content;
-            Answer3.Content = answers[2].Content;
-            Answer4.Content = answers[3].Content;
+            Answer1.Text = answers[0].Content;
+            Answer2.Text = answers[1].Content;
+            Answer3.Text = answers[2].Content;
+            Answer4.Text = answers[3].Content;
+
+            SubmitButton.Content = "Zatwierdź";
+            SubmitButton.Visibility = SubmitButton.IsVisible ? Visibility.Hidden : Visibility.Visible;
 
             CategoryContent.Visibility = CategoryContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
             AnswersContent.Visibility = AnswersContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
-            button.Visibility = button.IsVisible ? Visibility.Hidden : Visibility.Visible;
-
         }
 
         private void GoToMainScreen(object sender, RoutedEventArgs e)
@@ -132,6 +164,15 @@ namespace PostawNaMilionn
             ClearBets();
             DisplayLevels();
         }
+
+        private void RunConsoleApp(object sender, RoutedEventArgs e)
+        {
+            FreeConsole();
+            AllocConsole();
+            String[] s = { };
+            PostawNaMilion.Program.Main(s);
+            SetConsoleCtrlHandler(new HandlerRoutine(ConsoleCtrlCheck), true);
+        }
         #endregion Handlers
 
         #region Helpers
@@ -140,7 +181,9 @@ namespace PostawNaMilionn
             award = 1000000;
             currentQuestionNumber = 1;
             SummaryContent.Visibility = SummaryContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
+            TheEndContent.Visibility = Visibility.Hidden;
 
+            SubmitButton.Content = "Dalej";
             #region images
             P7.Visibility = P6.Visibility = P5.Visibility = P4.Visibility = P3.Visibility = P2.Visibility= P1.Visibility = Visibility.Visible;
             img7.Visibility = img6.Visibility = img5.Visibility = img4.Visibility = img3.Visibility = img2.Visibility = img1.Visibility = Visibility.Hidden;
@@ -158,12 +201,16 @@ namespace PostawNaMilionn
             betAnswer1.Text = betAnswer2.Text = betAnswer3.Text = betAnswer4.Text = "0";
         }
 
-        public void LoadData()
+        public async Task LoadData()
         {
             var streamReader = new StreamReader("DataFile.json");
             string jsonData = streamReader.ReadToEnd();
 
             Categories = JsonConvert.DeserializeObject<IEnumerable<Category>>(jsonData);
+            await Task.Delay(4000);
+
+            SplashScreen.Visibility = Visibility.Hidden;
+            GameContent.Visibility = Visibility.Visible;
         }
 
         private void ShowCategories()
@@ -179,7 +226,7 @@ namespace PostawNaMilionn
 
         private void ShowResult()
         {
-            button.Visibility = button.IsVisible ? Visibility.Hidden : Visibility.Visible;
+            SubmitButton.Visibility = SubmitButton.IsVisible ? Visibility.Hidden : Visibility.Visible;
             for (var i = 0; i < answers.Length; i++)
             {
                 if (currentQuestion.Answers.FirstOrDefault(a => a.IsCorrect).Content == answers[i].Content)
@@ -187,12 +234,13 @@ namespace PostawNaMilionn
                     correctAnswerIndex = i;
                     award = amount[i];
                     ClearBets();
+                    SubmitButton.Content = "Dalej";
                 }
             }
 
-            Result.Content = $"{currentQuestion.Content}   {currentQuestion.Answers.FirstOrDefault(a => a.IsCorrect).Content}\n\n WYGRAŁEŚ: {award}";
             if (award == 0)
             {
+                TheEndContent.Visibility = Visibility.Visible;
                 ResultContent.Visibility = ResultContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
                 SummaryContent.Visibility = SummaryContent.IsVisible ? Visibility.Hidden : Visibility.Visible;
                 Summary.Content = "KONIEC GRY";
@@ -202,8 +250,8 @@ namespace PostawNaMilionn
 
         private void DisplayLevels()
         {
-            AmountLabel.Content = $"{award}";
-            button.Visibility = button.IsVisible ? Visibility.Hidden : Visibility.Visible;
+            AmountLabel.Content = $"Kwota: {award}";
+            SubmitButton.Visibility = SubmitButton.IsVisible ? Visibility.Hidden : Visibility.Visible;
             StartWindow.Visibility = StartWindow.IsVisible ? Visibility.Hidden : Visibility.Visible;
             switch (currentQuestionNumber)
             {

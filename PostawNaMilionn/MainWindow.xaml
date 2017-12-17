@@ -5,79 +5,92 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PostawNaMilionn"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="700">
-
+        Title="MainWindow" Height="470.779" Width="700">
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="574,417,0,0" VerticalAlignment="Top" Width="75" Click="Submit"/>
-        <Grid x:Name="StartWindow" Width="550" Height="200" > 
-
-            <Label Content=" -------POSTAW NA MILION-------" HorizontalAlignment="Left" Margin="160,10,0,0" VerticalAlignment="Top"/>
-
-            <Grid x:Name="Lvl1" Margin="0,56,500,114" Width="60" Height="40">
-                <Label x:Name="P1" Content="P1" Width="30" Height="30" Margin="2,-2,18,0" VerticalAlignment="Top" />
-                <Image x:Name="img1" Margin="21,7,8,10"  Source="correct.png" Visibility="Hidden"/>
-            </Grid>
-
-            <Grid x:Name="Lvl2" Margin="66,42,434,128" Width="50" Height="30" >
-                <Image x:Name="img2" Source="correct.png" Visibility="Hidden"/>
-                <Label x:Name="P2" Content="P2" Margin="-5,13,5,-13"/>
-            </Grid>
-
-            <Grid x:Name="Lvl3" Margin="121,54,379,116" Width="50" Height="30" >
-                <Label x:Name="P3" Content="P3" Margin="2,0,-2,0" Height="30" VerticalAlignment="Bottom"/>
-                <Image x:Name="img3" Source="correct.png" Visibility="Hidden"/>
-            </Grid>
-
-            <Grid x:Name="Lvl4" Margin="190,54,310,116" RenderTransformOrigin="0.831,6.329" Width="50" Height="30"  >
-                <Label x:Name="P4" Content="P4" Margin="6,0,-6,0"/>
-                <Image x:Name="img4" Source="correct.png" Visibility="Hidden"/>
-            </Grid>
-
-            <Grid x:Name="Lvl5" Margin="265,54,235,116" Width="50" Height="30" >
-                <Label x:Name="P5" Content="P5"/>
-                <Image x:Name="img5" Source="correct.png" Visibility="Hidden"/>
-            </Grid>
-
-            <Grid x:Name="Lvl6" Margin="329,56,171,114" Width="50" Height="30" >
-                <Label x:Name="P6" Content="P6"/>
-                <Image x:Name="img6" Source="correct.png" Visibility="Hidden"/>
-            </Grid>
-
-            <Grid x:Name="Lvl7" Margin="401,54,99,116" Width="50" Height="30" >
-                <Label x:Name="P7" Content="P7"/>
-                <Image x:Name="img7" Source="correct.png" Visibility="Hidden"/>
-            </Grid>
-
-            <Grid x:Name="Lvl8" Margin="468,56,32,114" Width="50" Height="30" >
-                <Label x:Name="P8" Content="P8"/>
-                <Image x:Name="img8" Source="correct.png" Visibility="Hidden"/>
-            </Grid>
-
+        <Grid x:Name="SplashScreen"   HorizontalAlignment="Left" Height="470" Margin="0,0,0,0" VerticalAlignment="Top" Width="694">
+            <Image HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="694" Source="Content/img/splash.jpg"/>
         </Grid>
-        <Grid x:Name="CategoryContent" Visibility="Hidden">
-            <Button x:Name="Category1" Content="Button" HorizontalAlignment="Left" Margin="75,39,0,0" VerticalAlignment="Top" Width="374" Height="46" Click="SelectCategory"/>
-            <Button x:Name="Category2" Content="Button" HorizontalAlignment="Left" Margin="78,103,0,0" VerticalAlignment="Top" Width="371" RenderTransformOrigin="-0.302,0.394"  Click="SelectCategory" Height="42" />
+        <Grid x:Name="GameContent" Visibility="Hidden" HorizontalAlignment="Left" Height="470" Margin="0,0,0,0" VerticalAlignment="Top" Width="694">
+            <Button x:Name="SubmitButton" Content="Button" HorizontalAlignment="Left" Margin="572,409,0,0" VerticalAlignment="Top" Width="75" Click="Submit" Panel.ZIndex="1000"/>
+            <Grid  x:Name="StartWindow" Margin="0,0,0,26"  >
+                <Grid.Background>
+                    <ImageBrush ImageSource="Content/img/money.jpg"/>
+                </Grid.Background>
+
+                <Grid x:Name="Lvl1" Margin="0,54,450,116" Width="50" Height="50">
+                    <Label x:Name="P1" Content="P1" VerticalAlignment="Center" Background="#FF457131" Foreground="White" RenderTransformOrigin="-0.209,-1.965" HorizontalAlignment="Center" Width="50" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                    <Image x:Name="img1"  Source="Content/img/correct.png" Visibility="Hidden"/>
+                </Grid>
+
+                <Grid x:Name="Lvl2" Margin="60,54,390,116" Width="50" Height="50" >
+                    <Image x:Name="img2" Source="Content/img/correct.png" />
+                    <Label x:Name="P2" Content="P2" Width="50" Height="50" Background="#FF457131" Foreground="White" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid x:Name="Lvl3" Margin="120,54,330,116" Width="50" Height="50" >
+                    <Label x:Name="P3" Content="P3" Width="50" Height="50" VerticalAlignment="Center" Foreground="White" Background="#FF457131" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Image x:Name="img3" Source="Content/img/correct.png" Visibility="Hidden"/>
+                </Grid>
+
+                <Grid x:Name="Lvl4" Margin="180,54,270,116" RenderTransformOrigin="0.831,6.329" Width="50" Height="50"  >
+                    <Label x:Name="P4" Content="P4" Width="50" Height="50" Background="#FF457131" Foreground="White" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                    <Image x:Name="img4" Source="Content/img/correct.png" Visibility="Hidden"/>
+                </Grid>
+
+                <Grid x:Name="Lvl5" Margin="240,54,210,116" Width="50" Height="50" >
+                    <Label x:Name="P5" Content="P5" Width="50" Height="50" Background="#FF457131" Foreground="White" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                    <Image x:Name="img5" Source="Content/img/correct.png" Visibility="Hidden"/>
+                </Grid>
+
+                <Grid x:Name="Lvl6" Margin="300,54,150,116" Width="50" Height="50" >
+                    <Label x:Name="P6" Content="P6" Width="50" Height="50" Background="#FF457131" Foreground="White" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                    <Image x:Name="img6" Source="Content/img/correct.png" Visibility="Hidden"/>
+                </Grid>
+
+                <Grid x:Name="Lvl7" Margin="360,54,90,116" Width="50" Height="50" >
+                    <Label x:Name="P7" Content="P7" Width="50" Height="50" Background="#FF457131" Foreground="White" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                    <Image x:Name="img7" Source="Content/img/correct.png" Visibility="Hidden"/>
+                </Grid>
+
+                <Grid x:Name="Lvl8" Margin="420,54,30,116" Width="50" Height="50" >
+                    <Label x:Name="P8" Content="P8" Width="50" Height="50" Background="#FF457131" Foreground="White" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+                    <Image x:Name="img8" Source="Content/img/correct.png" Visibility="Hidden"/>
+                </Grid>
+
+            </Grid>
+            <Grid x:Name="CategoryContent" Visibility="Hidden">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Content/img/money.jpg"/>
+                </Grid.Background>
+                <Label Content="Wybierz katerogię:" FontSize="20" Margin="275,100,0,0"/>
+                <Button x:Name="Category1" Content="Button" HorizontalAlignment="Left" Margin="175,175,0,0" VerticalAlignment="Top" Width="374" Height="46" Click="SelectCategory"/>
+                <Button x:Name="Category2" Content="Button" HorizontalAlignment="Left" Margin="175,250,0,0" VerticalAlignment="Top" Width="371" RenderTransformOrigin="-0.302,0.394"  Click="SelectCategory" Height="42" />
+            </Grid>
+            <Grid x:Name="AnswersContent" Visibility="Hidden">
+                <Image HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="694" Source="Content/img/question.jpg"/>
+                <TextBlock x:Name="QuestionContent" Text="Label" HorizontalAlignment="Left" Margin="136,351,0,0" VerticalAlignment="Top" Height="48" Width="508" FontSize="14" Foreground="White" FontWeight="Bold"/>
+                <TextBox x:Name="betAnswer1" Text="0" HorizontalAlignment="Left" Height="23" Margin="136,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+                <TextBox x:Name="betAnswer2" HorizontalAlignment="Left" Height="23" Margin="269,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Text="0"/>
+                <TextBox x:Name="betAnswer4" HorizontalAlignment="Left" Height="23" Margin="524,256,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100" Text="0"/>
+                <TextBox x:Name="betAnswer3" HorizontalAlignment="Left" Height="23" Margin="399,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Text="0"/>
+                <TextBlock x:Name="Answer1"  Text="Label" HorizontalAlignment="Left" Margin="134,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="#FFF90000" Width="102" Foreground="White" FontWeight="Bold" Height="70"/>
+                <TextBlock x:Name="Answer2" Text="Label" HorizontalAlignment="Left" Margin="265,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="Red" Width="104" Foreground="White" FontWeight="Bold" Height="70"/>
+                <TextBlock x:Name="Answer3" Text="Label" HorizontalAlignment="Left" Margin="399,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="Red" Width="100" Foreground="White" FontWeight="Bold" Height="70"/>
+                <TextBlock x:Name="Answer4" Text="Label" HorizontalAlignment="Left" Margin="524,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="Red" Width="100" Foreground="White" FontWeight="Bold" Height="70"/>
+                <Label x:Name="CategoryName" Content="Label" HorizontalAlignment="Left" Margin="167,32,0,0" VerticalAlignment="Top" Width="420" Height="44" FontSize="20" Background="#FF00E20B" Foreground="White"/>
+            </Grid>
+            <Grid x:Name="ResultContent" Visibility="Hidden">
+                <Image HorizontalAlignment="Left" Height="470" VerticalAlignment="Top" Width="694" Source="Content/img/good.jpg"/>
+                <Button x:Name="NextLvlButton" Click="GoToMainScreen" Width="50" Height="20" Content="Dalej" Margin="600,300,0,0"/>
+            </Grid>
+            <Grid x:Name="SummaryContent"  Visibility="Hidden">
+                <Label x:Name="Summary" Width="200" Height="50" Margin="194,189,299.6,231.4" />
+            </Grid>
+            <Grid x:Name="TheEndContent"  Visibility="Hidden">
+                <Image HorizontalAlignment="Left" Height="470" VerticalAlignment="Top" Width="694" Source="Content/img/bad.jpg"/>
+                <Button x:Name="PlayAgain" Width="200" Height="30" Click="ReTry" Content="Zagraj ponownie" Margin="447,308,47.4,132.4"/>
+            </Grid>
+            <Label x:Name="AmountLabel" Content="Kwota: " HorizontalAlignment="Left" Margin="500,28,0,0" VerticalAlignment="Top" FontSize="24"/>
         </Grid>
-        <Grid x:Name="AnswersContent" Visibility="Hidden">
-            <Label x:Name="QuestionContent" Content="Label" HorizontalAlignment="Left" Margin="54,150,0,0" VerticalAlignment="Top" Height="61" Width="415"/>
-            <TextBox x:Name="betAnswer1" Text="0" HorizontalAlignment="Left" Height="23" Margin="6,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="betAnswer2" HorizontalAlignment="Left" Height="23" Margin="136,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
-            <TextBox x:Name="betAnswer4" HorizontalAlignment="Left" Height="23" Margin="395,254,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Text="0"/>
-            <TextBox x:Name="betAnswer3" HorizontalAlignment="Left" Height="23" Margin="265,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
-            <Label x:Name="Answer1" Content="Label" HorizontalAlignment="Left" Margin="42,217,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly"/>
-            <Label x:Name="Answer2" Content="Label" HorizontalAlignment="Left" Margin="177,217,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly"/>
-            <Label x:Name="Answer3" Content="Label" HorizontalAlignment="Left" Margin="308,217,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly"/>
-            <Label x:Name="Answer4" Content="Label" HorizontalAlignment="Left" Margin="436,215,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly"/>
-            <Label x:Name="CategoryName" Content="Label" HorizontalAlignment="Left" Margin="54,67,0,0" VerticalAlignment="Top" Width="420" Height="44"/>
-        </Grid>
-        <Grid x:Name="ResultContent" Visibility="Hidden">
-            <Label x:Name="Result" />
-            <Button x:Name="NextLvlButton" Click="GoToMainScreen" Width="50" Height="20" Content="Dalej"/>
-        </Grid>
-        <Grid x:Name="SummaryContent"  Visibility="Hidden">
-            <Label x:Name="Summary" Width="200" Height="50" Margin="194,189,299.6,231.4" />
-            <Button x:Name="PlayAgain" Width="200" Height="30" Click="ReTry" Content="Zagraj ponownie" Margin="194,255,299.6,185.4"/>
-        </Grid>
-        <Label x:Name="AmountLabel" Content="Hajs: " HorizontalAlignment="Left" Margin="609,28,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

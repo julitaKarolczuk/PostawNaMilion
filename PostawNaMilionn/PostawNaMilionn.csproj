@@ -37,6 +37,9 @@
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PostawNaMilion">
+      <HintPath>..\PostawNaMilion\bin\Debug\PostawNaMilion.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -102,7 +105,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="correct.png" />
+    <Resource Include="Content\img\correct.png" />
+    <Resource Include="Content\img\splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Content\img\bad.jpg" />
+    <Resource Include="Content\img\good.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Content\img\question.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Content\img\money.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
