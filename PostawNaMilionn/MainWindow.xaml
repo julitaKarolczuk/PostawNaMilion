@@ -68,16 +68,16 @@
             </Grid>
             <Grid x:Name="AnswersContent" Visibility="Hidden">
                 <Image HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="694" Source="Content/img/question.jpg"/>
-                <TextBlock x:Name="QuestionContent" Text="Label" HorizontalAlignment="Left" Margin="136,351,0,0" VerticalAlignment="Top" Height="48" Width="508" FontSize="14" Foreground="White" FontWeight="Bold"/>
-                <TextBox x:Name="betAnswer1" Text="0" HorizontalAlignment="Left" Height="23" Margin="136,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-                <TextBox x:Name="betAnswer2" HorizontalAlignment="Left" Height="23" Margin="269,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Text="0"/>
-                <TextBox x:Name="betAnswer4" HorizontalAlignment="Left" Height="23" Margin="524,256,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100" Text="0"/>
-                <TextBox x:Name="betAnswer3" HorizontalAlignment="Left" Height="23" Margin="399,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Text="0"/>
-                <TextBlock x:Name="Answer1"  Text="Label" HorizontalAlignment="Left" Margin="134,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="#FFF90000" Width="102" Foreground="White" FontWeight="Bold" Height="70"/>
-                <TextBlock x:Name="Answer2" Text="Label" HorizontalAlignment="Left" Margin="265,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="Red" Width="104" Foreground="White" FontWeight="Bold" Height="70"/>
-                <TextBlock x:Name="Answer3" Text="Label" HorizontalAlignment="Left" Margin="399,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="Red" Width="100" Foreground="White" FontWeight="Bold" Height="70"/>
-                <TextBlock x:Name="Answer4" Text="Label" HorizontalAlignment="Left" Margin="524,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="Red" Width="100" Foreground="White" FontWeight="Bold" Height="70"/>
-                <Label x:Name="CategoryName" Content="Label" HorizontalAlignment="Left" Margin="167,32,0,0" VerticalAlignment="Top" Width="420" Height="44" FontSize="20" Background="#FF00E20B" Foreground="White"/>
+                <TextBlock x:Name="QuestionContent" HorizontalAlignment="Left" Text="Label" Margin="45,351,0,0" VerticalAlignment="Top" Height="70" Width="500" FontSize="12" Foreground="White" FontWeight="Bold" TextWrapping="Wrap"/>
+                <TextBox x:Name="betAnswer1" Text="0" HorizontalAlignment="Left" Height="23" Margin="135,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+                <TextBox x:Name="betAnswer2" HorizontalAlignment="Left" Height="23" Margin="267,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Text="0"/>
+                <TextBox x:Name="betAnswer4" HorizontalAlignment="Left" Height="23" Margin="531,256,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100" Text="0"/>
+                <TextBox x:Name="betAnswer3" HorizontalAlignment="Left" Height="23" Margin="400,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Text="0"/>
+                <TextBlock x:Name="Answer1"  Text="Label" HorizontalAlignment="Left" Margin="134,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="#FFF90000" Width="120" Foreground="White" FontWeight="Bold" Height="70" TextWrapping="Wrap"/>
+                <TextBlock x:Name="Answer2" Text="Label" HorizontalAlignment="Left" Margin="265,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="Red" Width="120" Foreground="White" FontWeight="Bold" Height="70" TextWrapping="Wrap"/>
+                <TextBlock x:Name="Answer3" Text="Label" HorizontalAlignment="Left" Margin="399,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="Red" Width="120" Foreground="White" FontWeight="Bold" Height="70" TextWrapping="Wrap"/>
+                <TextBlock x:Name="Answer4" Text="Label" HorizontalAlignment="Left" Margin="530,179,0,0" VerticalAlignment="Top" PreviewTextInput="NumericOnly" Background="Red" Width="120" Foreground="White" FontWeight="Bold" Height="70" TextWrapping="Wrap"/>
+                <Label x:Name="CategoryName" Content="Label" Margin="167,32,0,0" VerticalAlignment="Top" Width="500" Height="44" FontSize="20" Background="#FF00E20B" Foreground="White"/>
             </Grid>
             <Grid x:Name="ResultContent" Visibility="Hidden">
                 <Image HorizontalAlignment="Left" Height="470" VerticalAlignment="Top" Width="694" Source="Content/img/good.jpg"/>
